@@ -27,21 +27,22 @@
     <main>
       <h1>Магазин готовых шаблонов</h1>
       <section>
-        <h3>Сетка</h3>
-        <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
-        <h3>Особенности</h3>
-        <ul>
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
-        <span>Показать</span>
+        <form action="" method="POST">
+          <h3>Сетка</h3>          
+            <li><label>Адаптивная<input type="radio" name="filter-grid" value="adaptive"  checked></label></li>
+            <li><label>Фиксированная<input name="filter-grid" value="fixed" type="radio"></label></li>
+            <li><label>Резиновая<input name="filter-grid" value="responsive" type="radio"></label></li>
+          </ul>
+          <h3>Особенности</h3>
+          <ul>
+            <li><label>Слайдер<input type="checkbox" name="filter-slider" checked></label></li>
+            <li><label>Блок преимуществ<input type="checkbox" name="filter-block"></label></li>
+            <li><label>Новости<input type="checkbox" name="filter-news" checked></label></li>
+            <li><label>Галерея<input type="checkbox" name="filter-gallery"></label></li>
+            <li><label>Корзина<input type="checkbox" name="filter-basket"></label></li>
+          </ul>
+          <button>Показать</button>
+        </form>
       </section>
       <section>
         <ul>
@@ -139,5 +140,22 @@
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+    <div>
+      <form action="" method="POST">
+        <h2>Напишите нам</h2>
+        <span>x</span>
+        <label>
+          Ваше имя:
+          <input type="input" value="" placeholder="Имя Фамилия" />
+        </label>
+        <label>
+          Ваш e-mail:
+          <input type="input" value="" placeholder="e-mail@example.com" />
+        </label>
+        <p>Текст письма:</p>
+        <textarea placeholder="В свободной форме"></textarea>
+        <button>Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
