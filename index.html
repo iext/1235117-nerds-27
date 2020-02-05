@@ -187,9 +187,11 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
     <div>
-      <form action="https://echo.htmlacademy.ru" method="POST">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <h2>Напишите нам</h2>
-        <span>x</span>
+        <button type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
         <label>
           Ваше имя:
           <input type="text" value="" placeholder="Имя Фамилия" />
@@ -198,9 +200,15 @@
           Ваш e-mail:
           <input type="email" value="" placeholder="e-mail@example.com" />
         </label>
-        <p>Текст письма:</p>
-        <textarea placeholder="В свободной форме"></textarea>
-        <button>Отправить</button>
+        <p>
+         <label>
+           Текст письма:
+           <textarea placeholder="В свободной форме"></textarea>
+         </label>
+        </p>
+        <p>
+          <button type="submit">Отправить</button>
+        </p>
       </form>
     </div>
   </body>
