@@ -29,6 +29,18 @@
       <section>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
+            <legend>Стоимость:</legend>
+            <input type="range" min="0" step="1" value="0" />
+            <p>
+              <label
+                >от<input type="number" name="filter-cost-min" value="0"
+              /></label>
+              <label
+                >до<input type="number" name="filter-cost-max" value="15000"
+              /></label>
+            </p>
+          </fieldset>
+          <fieldset>
             <legend>Сетка</legend>
             <ul>
               <li>
@@ -92,6 +104,24 @@
         </form>
       </section>
       <section>
+        <div>
+          <span>Сортировать:</span>
+          <ul>
+            <li><a href="">По цене</a></li>
+            <li><a href="">По типу</a></li>
+            <li><a href="">По названию</a></li>
+            <li>
+              <a href="">
+                <span class="visually-hidden">Сортировка по убыванию</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="visually-hidden">Сортировка по возрастанию</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul>
           <li>
             <img
@@ -167,6 +197,20 @@
       </section>
     </main>
     <footer>
+      <div>
+        <b>NЁRDS DESIGN STUDIO</b>
+        <p>
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812)
+          275-75-75
+        </p>        
+        <a href="">Напишите нам</a>        
+      </div>
+      <img 
+        src="img/map-marker.png"
+        width="231" 
+        height="190" 
+        alt="Маркер на карте с изображением логотипа студии Нёрдс" 
+      />
       <img
         src="img/map.png"
         width="1444"
@@ -202,10 +246,10 @@
           <input type="email" value="" placeholder="e-mail@example.com" />
         </label>
         <p>
-         <label>
-           Текст письма:
-           <textarea placeholder="В свободной форме"></textarea>
-         </label>
+          <label>
+            Текст письма:
+            <textarea placeholder="В свободной форме"></textarea>
+          </label>
         </p>
         <p>
           <button type="submit">Отправить</button>
