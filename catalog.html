@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Студия веб дизайна</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -14,8 +17,8 @@
           height="65"
           alt="Логотип веб-студии Нёрдс"
       /></a>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="index.html">Студия</a></li>
           <li><a href="">Клиенты</a></li>
           <li><a>Магазин</a></li>
@@ -24,11 +27,11 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1>Магазин готовых шаблонов</h1>
-      <section>
+      <section class="filters">
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="filter-item">
             <legend>Стоимость:</legend>
             <p>
               <label
@@ -39,8 +42,8 @@
               /></label>
             </p>
           </fieldset>
-          <fieldset>
-            <legend>Сетка</legend>
+          <fieldset class="filter-item">
+            <legend>Сетка:</legend>
             <ul>
               <li>
                 <label
@@ -69,8 +72,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Особенности</legend>
+          <fieldset class="filter-item">
+            <legend>Особенности:</legend>
             <ul>
               <li>
                 <label
@@ -99,13 +102,13 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button type="submit" class="btn-grey">Показать</button>
         </form>
       </section>
       <section>
-        <div>
+        <div class="panel-sorting">
           <span>Сортировать:</span>
-          <ul>
+          <ul class="sorting-controls">
             <li><a href="">По цене</a></li>
             <li><a href="">По типу</a></li>
             <li><a href="">По названию</a></li>
@@ -121,8 +124,8 @@
             </li>
           </ul>
         </div>
-        <ul>
-          <li>
+        <ul class="list-products">
+          <li class="product-item">
             <img
               src="img/img-sedona-jpg.jpg"
               width="360"
@@ -133,9 +136,9 @@
             <p>
               Информационный сайт для туристов
             </p>
-            <button type="button">9900 руб.</button>
+            <button type="button" class="btn-red">9900 руб.</button>
           </li>
-          <li>
+          <li class="product-item">
             <img
               src="img/img-pink-jpg.jpg"
               width="360"
@@ -144,9 +147,9 @@
             />
             <h3><a href="">Pink App</a></h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <button type="button">9900 руб.</button>
+            <button type="button" class="btn-red">9900 руб.</button>
           </li>
-          <li>
+          <li class="product-item">
             <img
               src="img/img-barbershop-jpg.jpg"
               width="360"
@@ -155,9 +158,9 @@
             />
             <h3><a href="">Barbershop</a></h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
-            <button type="button">9900 руб.</button>
+            <button type="button" class="btn-red">9900 руб.</button>
           </li>
-          <li>
+          <li class="product-item">
             <img
               src="img/img-mishka-jpg.jpg"
               width="360"
@@ -166,9 +169,9 @@
             />
             <h3><a href="">Mishka</a></h3>
             <p>Интернет-магазин вязаных игрушек</p>
-            <button type="button">9900 руб.</button>
+            <button type="button" class="btn-red">9900 руб.</button>
           </li>
-          <li>
+          <li class="product-item">
             <img
               src="img/img-aplus-jpg.jpg"
               width="360"
@@ -179,9 +182,9 @@
             <p>
               Лендинг курсов повышения квалификации
             </p>
-            <button type="button">9900 руб.</button>
+            <button type="button" class="btn-red">9900 руб.</button>
           </li>
-          <li>
+          <li class="product-item">
             <img
               src="img/img-kvast-jpg.jpg"
               width="360"
@@ -190,11 +193,11 @@
             />
             <h3><a href="">Кваст</a></h3>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <button type="button">9900 руб.</button>
+            <button type="button" class="btn-red">9900 руб.</button>
           </li>
         </ul>
         <div>
-          <ul>
+          <ul class="pagination">
             <li><a href="">1</a></li>
             <li><a href="">2</a></li>
             <li><a href="">3</a></li>
@@ -203,14 +206,14 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div>
+    <footer class="main-footer">
+      <div class="contacts">
         <b>NЁRDS DESIGN STUDIO</b>
         <p>
           191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812)
           275-75-75
         </p>        
-        <a href="">Напишите нам</a>        
+        <a href="" class="btn-red">Напишите нам</a>        
       </div>
       <img 
         src="img/map-marker.png"
@@ -238,7 +241,7 @@
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-    <div>
+    <div class="modal">
       <form action="https://echo.htmlacademy.ru" method="post">
         <h2>Напишите нам</h2>
         <button type="button">
@@ -259,7 +262,7 @@
           </label>
         </p>
         <p>
-          <button type="submit">Отправить</button>
+          <button type="submit" class="btn-red">Отправить</button>
         </p>
       </form>
     </div>

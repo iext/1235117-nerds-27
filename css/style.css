@@ -1,0 +1,369 @@
+/* Общие стили
+     ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-red {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  color: #ffffff;
+}
+.btn-red:hover,
+.btn-red:focus {
+  background-color: #e74246;
+}
+.btn-red:active {
+  background-color: #d7373b;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-green {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: #00ca74;
+  color: #ffffff;
+}
+.btn-green:hover,
+.btn-green:focus {
+  background-color: #00bc6c;
+}
+.btn-green-red:active {
+  background-color: #00aa62;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-yellow {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: #efc84a;
+  color: #ffffff;
+}
+.btn-yellow:hover,
+.btn-yellow:focus {
+  background-color: #eab534;
+}
+.btn-yellow:active {
+  background-color: #e5a722;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-grey {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+  color: #000000;
+}
+.btn-grey:hover,
+.btn-grey:focus {
+  background-color: #dfdfdf;
+}
+.btn-grey:active {
+  background-color: #d5d5d5;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Навигация
+     ========================================================================== */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Слайдер
+     ========================================================================== */
+
+.slider-item b {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-item p {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #283136;
+}
+
+/* Секция Main
+     ========================================================================== */
+.container h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.feature-item p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.promo-about h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.promo-about p {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #283136;
+}
+
+.promo-about b {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.promo-about-list {
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.promo-info p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.promo-info-list b {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: bold;
+}
+
+.promo-info-list p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+/* Секция Фильтров
+     ========================================================================== */
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+/* Секция Сортировки
+     ========================================================================== */
+
+.panel-sorting span {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.sorting-controls {
+  list-style: none;
+}
+
+.sorting-controls a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-controls a:focus,
+.sorting-controls a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-controls a:active {
+  color: #000000;
+}
+
+.sorting-controls li:first-child a {
+  color: #000000;
+}
+
+.sorting-controls a {
+}
+
+/* Секция Товаров
+     ========================================================================== */
+
+.list-products {
+  list-style: none;
+}
+
+.product-item a {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.product-item a:hover,
+.product-item a:focus {
+  color: #fb565a;
+}
+
+.product-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.product-item p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  color: #000000;
+}
+
+/* Секция Footer
+     ========================================================================== */
+
+.main-footer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.main-footer p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contacts b {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* Модальное окно
+     ========================================================================== */
+
+.modal b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.modal label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.modal input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal textarea::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
