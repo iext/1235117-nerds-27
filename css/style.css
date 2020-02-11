@@ -10,14 +10,21 @@ html {
   box-sizing: inherit;
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -197,6 +204,7 @@ a {
 .promo-about b {
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -208,6 +216,7 @@ a {
 .promo-info p {
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -231,6 +240,12 @@ a {
   line-height: 30px;
   font-weight: bold;
 
+  text-transform: uppercase;
+}
+
+.filter-item p {
+  font-size: 16px;
+  line-height: 22px;
   text-transform: uppercase;
 }
 
@@ -313,7 +328,21 @@ a {
   text-transform: uppercase;
   font-weight: bold;
 
+  background-color: #eeeeee;
   color: #000000;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination a:active {
+  background-color: #d5d5d5;
+}
+
+.pagination li:first-child a {
+  background-color: #ffffff;
 }
 
 /* Секция Footer
@@ -331,7 +360,7 @@ a {
 }
 
 .contacts b {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: bold;
 }
@@ -339,6 +368,7 @@ a {
 .contacts p {
   font-size: 16px;
   line-height: 18px;
+  color: #666666;
 }
 
 /* Модальное окно
