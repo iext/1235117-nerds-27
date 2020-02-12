@@ -1,0 +1,72 @@
+/* ----- Временный файл для раскрашивания блоков сетки -----*/
+
+.main-header {
+  outline: 2px solid rgb(0, 92, 12);
+  background: rgba(59, 160, 72, 0.438);
+}
+
+.main-header-logo {
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
+}
+
+.main-navigation {
+  outline: 2px solid rgb(22, 5, 255);
+  background: rgba(8, 24, 253, 0.438);
+}
+
+.features {
+  outline: 2px solid rgb(0, 92, 12);
+  background: rgba(59, 160, 72, 0.438);
+}
+
+.feature-item {
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
+}
+
+.footer-wrapper {
+  outline: 2px solid rgb(22, 5, 255);
+  background: rgba(8, 24, 253, 0.438);
+}
+
+.footer-social,
+.footer-text {
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
+}
+
+.page-title {
+  outline: 2px solid rgb(22, 5, 255);
+  background: rgba(8, 24, 253, 0.438);
+}
+
+.container {
+  outline: 2px solid rgb(0, 92, 12);
+  background: rgba(59, 160, 72, 0.438);
+}
+
+.filters {
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
+}
+
+.products {
+  outline: 2px solid rgb(22, 5, 255);
+  background: rgba(8, 24, 253, 0.438);
+}
+
+.list-products {
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
+}
+
+.panel-sorting {
+  outline: 2px solid rgb(0, 92, 12);
+  background: rgba(59, 160, 72, 0.438);
+}
+
+.product-item {
+  outline: 2px solid rgb(0, 92, 12);
+  background: rgba(59, 160, 72, 0.438);
+}
