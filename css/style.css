@@ -44,6 +44,11 @@ body {
   margin: 0 auto;
 }
 
+.container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -128,24 +133,27 @@ a {
      ========================================================================== */
 
 .main-header {
-  display: flex;
-  align-items: flex-end;
+  display: flex; 
+  flex-direction: column;
+
+  padding-top:49px;
 }
 
-.main-header-logo {
-  margin-top: 49px;
-  margin-left: 140px;
+.main-header-logo {    
   width: 160px;
-  height: 65px;
+  height: 65px;  
 }
 
 /* Навигация
      ========================================================================== */
-
+.navigation-wrapper {
+  display: flex;
+  flex-direction: row;
+}
 .main-navigation {
   display: flex;
-  flex-grow: 1;
-
+  flex-direction: row;
+  flex-grow: 1;  
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -154,10 +162,19 @@ a {
   color: #000000;
 }
 
-.site-navigation {
-  display: flex;
-
+.site-navigation {  
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-navigation{  
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  margin-left: auto;
 }
 
 .site-navigation a {
@@ -175,6 +192,9 @@ a {
 
 /* Слайдер
      ========================================================================== */
+.slider{
+  display: flex;  
+}
 
 .slider-item b {
   font-size: 55px;
@@ -190,25 +210,20 @@ a {
 
 /* Секция Main
      ========================================================================== */
-.container h1 {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-}
 
-.features {
-  margin-top: 80px;
-  margin-left: 140px;
-  width: 1100px;
+.features {  
+  padding-top: 80px;
 }
 
 .features-list {
   padding: 0;
   margin: 0;
+  padding-right: 60px;
+
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-
+  align-items: stretch;  
+  
   list-style: none;
 }
 
@@ -230,11 +245,15 @@ a {
 }
 
 .page-title {
-  margin: 0;
-  padding: 0;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+
+  text-align: center;
+
+  margin:0;  
   padding-top: 82px;
   padding-bottom: 116px;
-  text-align: center;
 }
 
 .promo-about h2 {
@@ -284,17 +303,15 @@ a {
 /* Секция Фильтров
      ========================================================================== */
 
-.container-wrapper {
+.catalog-column {
   display: flex;
 }
 
-.filters {
-  margin-left: 140px;
-  width: 260px;
+.filters {  
+  min-width: 260px;
 }
 
-.products {
-  width: 1040px;
+.products {  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,19 +375,19 @@ a {
 .list-products {
   padding: 0;
   margin: 0;
-  margin-top: 59px;
-  margin-left: 140px;
+  padding-top: 59px;
+  padding-left: 140px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   list-style: none;
 }
 
-.product-item {
-  margin-right: 40px;
+.product-item {  
   margin-bottom: 33px;
-  /* Временно для сетки */
   width: 360px;
+  /* Временно для сетки */  
   height: 616px;
 }
 
@@ -458,6 +475,9 @@ a {
 
 /* Модальное окно
      ========================================================================== */
+.modal,.contacts{
+  display: none;
+}
 
 .modal b {
   font-size: 45px;

@@ -1,8 +1,17 @@
 /* ----- Временный файл для раскрашивания блоков сетки -----*/
+.body-wrapper{
+    outline: 2px solid rgb(255, 5, 172);
+    background: rgba(253, 8, 212, 0.438);  
+}
 
 .main-header {
   outline: 2px solid rgb(0, 92, 12);
   background: rgba(59, 160, 72, 0.438);
+}
+
+.title-wrapper{
+    outline: 2px solid rgb(251, 255, 5);
+    background: rgba(249, 253, 8, 0.438);
 }
 
 .main-header-logo {
@@ -11,8 +20,13 @@
 }
 
 .main-navigation {
-  outline: 2px solid rgb(22, 5, 255);
-  background: rgba(8, 24, 253, 0.438);
+    outline: 2px solid rgb(22, 5, 255);
+    background: rgba(8, 24, 253, 0.438);
+}
+
+.user-navigation{
+    outline: 2px solid rgb(251, 255, 5);
+    background: rgba(249, 253, 8, 0.438);
 }
 
 .features {
