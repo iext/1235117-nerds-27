@@ -40,7 +40,7 @@ body {
 }
 
 .body-wrapper {
-  width: 1440px;
+  min-width: 1160px;
   margin: 0 auto;
 }
 
@@ -448,6 +448,12 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.map{
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
 }
 
 .main-footer b {
