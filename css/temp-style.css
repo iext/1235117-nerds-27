@@ -89,3 +89,8 @@
   outline: 2px solid rgb(0, 92, 12);
   background: rgba(59, 160, 72, 0.438);
 }
+
+.map-wrapper{
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
+}

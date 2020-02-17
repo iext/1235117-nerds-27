@@ -45,8 +45,9 @@ body {
 }
 
 .container{
-  width: 1160px;
+  width: 1200px;  
   margin: 0 auto;
+  padding: 20px;
 }
 
 a {
@@ -136,7 +137,7 @@ a {
   display: flex; 
   flex-direction: column;
 
-  padding-top:49px;
+  padding-top:29px;
 }
 
 .main-header-logo {    
@@ -450,10 +451,14 @@ a {
   align-items: center;
 }
 
-.map{
-  width: 100%;
-  max-width: 1440px;
-  height: auto;
+.map-wrapper{
+  max-height: 416px; 
+  overflow: hidden;
+}
+
+.map{  
+  width: 100%;    
+  height: auto;  
 }
 
 .main-footer b {
@@ -481,7 +486,7 @@ a {
 
 /* Модальное окно
      ========================================================================== */
-.modal,.contacts{
+.modal,.contacts,.map-marker{
   display: none;
 }
 
