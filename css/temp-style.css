@@ -1,7 +1,7 @@
 /* ----- Временный файл для раскрашивания блоков сетки -----*/
-.body-wrapper{
-    outline: 2px solid rgb(255, 5, 172);
-    background: rgba(253, 8, 212, 0.438);  
+.body-wrapper {
+  outline: 2px solid rgb(255, 5, 172);
+  background: rgba(253, 8, 212, 0.438);
 }
 
 .main-header {
@@ -9,9 +9,9 @@
   background: rgba(59, 160, 72, 0.438);
 }
 
-.title-wrapper{
-    outline: 2px solid rgb(251, 255, 5);
-    background: rgba(249, 253, 8, 0.438);
+.title-wrapper {
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
 }
 
 .main-header-logo {
@@ -20,13 +20,13 @@
 }
 
 .main-navigation {
-    outline: 2px solid rgb(22, 5, 255);
-    background: rgba(8, 24, 253, 0.438);
+  outline: 2px solid rgb(22, 5, 255);
+  background: rgba(8, 24, 253, 0.438);
 }
 
-.user-navigation{
-    outline: 2px solid rgb(251, 255, 5);
-    background: rgba(249, 253, 8, 0.438);
+.user-navigation {
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
 }
 
 .features {
@@ -39,10 +39,10 @@
   background: rgba(249, 253, 8, 0.438);
 }
 
-.main-footer{
-    outline: 2px solid rgb(0, 92, 12);
-    background: rgba(59, 160, 72, 0.438);
-  }
+.main-footer {
+  outline: 2px solid rgb(0, 92, 12);
+  background: rgba(59, 160, 72, 0.438);
+}
 
 .footer-wrapper {
   outline: 2px solid rgb(22, 5, 255);
@@ -71,8 +71,8 @@
 }
 
 .products {
-  outline: 2px solid rgb(22, 5, 255);
-  background: rgba(8, 24, 253, 0.438);
+  outline: 2px solid rgb(255, 22, 5);
+  background: rgba(253, 16, 8, 0.438);
 }
 
 .list-products {
@@ -90,7 +90,42 @@
   background: rgba(59, 160, 72, 0.438);
 }
 
-.map-wrapper{
+.map-wrapper {
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
+}
+
+.slider {
+  outline: 2px solid rgb(255, 5, 159);
+  background: rgba(253, 8, 212, 0.438);
+}
+
+.slider-inner {
+  outline: 2px solid rgb(251, 255, 5);
+  background: rgba(249, 253, 8, 0.438);
+}
+
+.slider-item {
+  outline: 2px solid rgb(22, 5, 255);
+  background: rgba(8, 24, 253, 0.438);
+}
+
+.slider-sontrols {
+  outline: 2px solid rgb(0, 92, 12);
+  background: rgba(59, 160, 72, 0.438);
+}
+
+.promo-about {
+  outline: 2px solid rgb(22, 5, 255);
+  background: rgba(8, 24, 253, 0.438);
+}
+
+.promo-info {
+  outline: 2px solid rgb(0, 92, 12);
+  background: rgba(59, 160, 72, 0.438);
+}
+
+.partners {
   outline: 2px solid rgb(251, 255, 5);
   background: rgba(249, 253, 8, 0.438);
 }

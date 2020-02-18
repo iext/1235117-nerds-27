@@ -1,5 +1,4 @@
-/* Общие стили
-     ========================================================================== */
+/*----- Общие стили -----*/
 
 html {
   box-sizing: border-box;
@@ -44,8 +43,8 @@ body {
   margin: 0 auto;
 }
 
-.container{
-  width: 1200px;  
+.container {
+  width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -130,23 +129,21 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* Header
-     ========================================================================== */
+/*----- Header -----*/
 
 .main-header {
-  display: flex; 
+  display: flex;
   flex-direction: column;
 
-  padding-top:29px;
+  padding-top: 29px;
 }
 
-.main-header-logo {    
+.main-header-logo {
   width: 160px;
-  height: 65px;  
+  height: 65px;
 }
 
-/* Навигация
-     ========================================================================== */
+/*----- Навигация -----*/
 .navigation-wrapper {
   display: flex;
   flex-direction: row;
@@ -154,7 +151,7 @@ a {
 .main-navigation {
   display: flex;
   flex-direction: row;
-  flex-grow: 1;  
+  flex-grow: 1;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -163,7 +160,7 @@ a {
   color: #000000;
 }
 
-.site-navigation {  
+.site-navigation {
   list-style: none;
 
   display: flex;
@@ -171,7 +168,7 @@ a {
   justify-content: space-between;
 }
 
-.user-navigation{  
+.user-navigation {
   display: flex;
   align-items: stretch;
   list-style: none;
@@ -191,10 +188,21 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* Слайдер
-     ========================================================================== */
-.slider{
-  display: flex;  
+/*----- Слайдер -----*/
+.slider {
+}
+
+.slider-sontrols {
+  /*временно для сетки*/
+  display: block;
+  width: 100px;
+  height: 18px;
+}
+.slider-inner {
+  display: flex;
+}
+
+.slider-item {
 }
 
 .slider-item b {
@@ -209,11 +217,13 @@ a {
   color: #283136;
 }
 
-/* Секция Main
-     ========================================================================== */
+/*----- Секция Main -----*/
 
-.features {  
-  padding-top: 80px;
+.features {
+  padding-top: 60px;
+
+  /*временно*/
+  min-height: 487px;
 }
 
 .features-list {
@@ -223,8 +233,8 @@ a {
 
   display: flex;
   justify-content: space-between;
-  align-items: stretch;  
-  
+  align-items: stretch;
+
   list-style: none;
 }
 
@@ -252,9 +262,26 @@ a {
 
   text-align: center;
 
-  margin:0;  
+  margin: 0;
   padding-top: 82px;
   padding-bottom: 116px;
+}
+
+.promo {
+  display: flex;
+  padding-top: 41px;
+}
+
+.promo-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.promo-info-list {
+  list-style: none;
+  display: flex;
 }
 
 .promo-about h2 {
@@ -299,23 +326,33 @@ a {
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
+  text-transform: none;
 }
 
-/* Секция Фильтров
-     ========================================================================== */
+/*----- Секция партнёров ------*/
+.partners {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 180px;
+}
+
+/*----- Секция Фильтров -----*/
 
 .catalog-column {
   display: flex;
 }
 
-.filters {  
+.filters {
   min-width: 260px;
 }
 
-.products {  
+.products {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  padding-left: 140px;
 }
 
 .filter-item legend {
@@ -332,8 +369,11 @@ a {
   text-transform: uppercase;
 }
 
-/* Секция Сортировки
-     ========================================================================== */
+/*----- Секция Сортировки -----*/
+.panel-sorting {
+  display: flex;
+  justify-content: space-between;
+}
 
 .panel-sorting span {
   font-size: 18px;
@@ -345,6 +385,7 @@ a {
 
 .sorting-controls {
   list-style: none;
+  display: flex;
 }
 
 .sorting-controls a {
@@ -370,14 +411,12 @@ a {
 .sorting-controls a {
 }
 
-/* Секция Товаров
-     ========================================================================== */
+/*----- Секция Товаров -----*/
 
 .list-products {
   padding: 0;
   margin: 0;
   padding-top: 59px;
-  padding-left: 140px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -385,11 +424,9 @@ a {
   list-style: none;
 }
 
-.product-item {  
+.product-item {
   margin-bottom: 33px;
   width: 360px;
-  /* Временно для сетки */  
-  height: 616px;
 }
 
 .product-item a {
@@ -417,6 +454,10 @@ a {
 
 .pagination {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
 }
 
 .pagination a {
@@ -443,22 +484,21 @@ a {
   background-color: #ffffff;
 }
 
-/* Секция Footer
-     ========================================================================== */
+/*----- Секция Footer -----*/
 .footer-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.map-wrapper{
-  max-height: 416px; 
+.map-wrapper {
+  max-height: 416px;
   overflow: hidden;
 }
 
-.map{  
-  width: 100%;    
-  height: auto;  
+.map {
+  width: 100%;
+  height: auto;
 }
 
 .main-footer b {
@@ -484,9 +524,10 @@ a {
   color: #666666;
 }
 
-/* Модальное окно
-     ========================================================================== */
-.modal,.contacts,.map-marker{
+/*----- Модальное окно -----*/
+.modal,
+.contacts,
+.map-marker {
   display: none;
 }
 
