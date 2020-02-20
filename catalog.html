@@ -53,64 +53,46 @@
           <fieldset class="filter-item">
             <legend>Сетка:</legend>
             <ul>
-              <li>
-                <label
-                  >Адаптивная<input
-                    type="radio"
-                    name="filter-grid"
-                    value="adaptive"
-                    checked
-                /></label>
+              <li class="filter-option">                
+                <input class="visually-hidden filter-input filter-input-radio" id="filter-adaptive" name="filter-grid" value="adaptive" type="radio" checked />
+                <label for="filter-adaptive">Адаптивная</label>
               </li>
-              <li>
-                <label
-                  >Фиксированная<input
-                    name="filter-grid"
-                    value="fixed"
-                    type="radio"
-                /></label>
+              <li class="filter-option">                
+                <input class="visually-hidden filter-input filter-input-radio" id="filter-fixed" name="filter-grid" value="fixed" type="radio" />
+                <label for="filter-fixed">Фиксированная</label>
               </li>
-              <li>
-                <label
-                  >Резиновая<input
-                    name="filter-grid"
-                    value="responsive"
-                    type="radio"
-                /></label>
+              <li class="filter-option">                
+                <input class="visually-hidden filter-input filter-input-radio" id="filter-responsive" name="filter-grid" value="responsive" type="radio" />
+                <label for="filter-responsive">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-item">
             <legend>Особенности:</legend>
             <ul>
-              <li>
-                <label
-                  >Слайдер<input type="checkbox" name="filter-slider" checked
-                /></label>
+              <li class="filter-option">
+                <input class="visually-hidden input-checkbox filter-input-checkbox" id="filter-slider" type="checkbox" name="filter-slider" checked />
+                <label for="filter-slider">Слайдер</label>
               </li>
-              <li>
-                <label
-                  >Блок преимуществ<input type="checkbox" name="filter-block"
-                /></label>
+              <li class="filter-option">
+                <input class="visually-hidden input-checkbox filter-input-checkbox" id="filter-block" type="checkbox" name="filter-block" />
+                <label for="filter-block">Блок преимуществ</label>
               </li>
-              <li>
-                <label
-                  >Новости<input type="checkbox" name="filter-news" checked
-                /></label>
+              <li class="filter-option">
+                <input class="visually-hidden input-checkbox filter-input-checkbox" id="filter-news" type="checkbox" name="filter-news" checked />
+                <label for="filter-news">Новости</label>
               </li>
-              <li>
-                <label
-                  >Галерея<input type="checkbox" name="filter-gallery"
-                /></label>
+              <li class="filter-option">
+                <input class="visually-hidden input-checkbox filter-input-checkbox" id="filter-gallery" type="checkbox" name="filter-gallery" />
+                <label for="filter-gallery">Галерея</label>
               </li>
-              <li>
-                <label
-                  >Корзина<input type="checkbox" name="filter-basket"
-                /></label>
+              <li class="filter-option">
+                <input class="visually-hidden input-checkbox filter-input-checkbox" id="filter-basket" type="checkbox" name="filter-basket" />
+                <label for="filter-basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="btn-grey">Показать</button>
+          <button type="submit" class="btn btn-grey btn-lg">Показать</button>
         </form>
       </section>
       <section class="products">
@@ -237,13 +219,13 @@
           <div class="footer-social">
             <ul>
               <li>
-                <a href="https://vk.com">Мы вконтакте</a>
+                <a class="social-button social-vk" href="https://vk.com"><span class="visually-hidden">Мы вконтакте</span></a>
               </li>
               <li>
-                <a href="https://www.facebook.com">Мы в фейсбук‎</a>
+                <a class="social-button social-fb" href="https://www.facebook.com"><span class="visually-hidden">Мы в фейсбук‎</span></a>
               </li>
               <li>
-                <a href="https://www.instagram.com">Наш инстаграм</a>
+                <a class="social-button social-insta" href="https://www.instagram.com"><span class="visually-hidden">Наш инстаграм</span></a>
               </li>
             </ul>
           </div>
@@ -254,31 +236,29 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal visually-hidden">
       <form action="https://echo.htmlacademy.ru" method="post">
-        <h2>Напишите нам</h2>
-        <button type="button">
-          <span class="visually-hidden">Закрыть модальное окно</span>
-        </button>
-        <label>
-          Ваше имя:
-          <input type="text" value="" placeholder="Имя Фамилия" />
-        </label>
-        <label>
-          Ваш e-mail:
-          <input type="email" value="" placeholder="e-mail@example.com" />
-        </label>
-        <p>
-          <label>
-            Текст письма:
-            <textarea placeholder="В свободной форме"></textarea>
-          </label>
-        </p>
-        <p>
-          <button type="submit" class="btn-red">Отправить</button>
-        </p>
+        <div class="modal-header">
+          <h2>Напишите нам</h2>
+          <button type="button" class="modal-close">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+          </button>
+        </div>
+        <div class="modal-wrapper">
+          <div>
+            <label for="form-name">Ваше имя:</label>
+            <input id="form-name" type="text" value="" placeholder="Имя Фамилия" />        
+         </div>
+         <div>
+          <label for="form-email">Ваш e-mail:</label>
+          <input id="form-email" type="email" value="" placeholder="e-mail@example.com" />
+         </div>
+        </div> 
+        <label for="form-message">Текст письма:</label>
+          <textarea id="form-message" placeholder="В свободной форме"></textarea>
+        <button type="submit" class="btn btn-lg btn-red">Отправить</button>
       </form>
-    </div> 
+    </div>
     <script
       src="https://rawcdn.githack.com/ArtMan-8/outline-prototype/9735cb1ad2dc8b759c76c94fc92f4be68d66798d/js/outline-control.js"></script>
   </body>
