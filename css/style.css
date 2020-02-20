@@ -112,6 +112,13 @@ a {
 }
 
 .btn-xs {
+  display: flex;
+  max-width: 200px;
+  width: 100%;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
 }
 
 .btn-md {
@@ -485,6 +492,8 @@ a {
   background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+ 
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -500,10 +509,6 @@ a {
   background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.filter-input:hover + label,
-.filter-input:focus + label {
   
 }
 
@@ -611,17 +616,55 @@ a {
   list-style: none;
 }
 
-.product-item {
+.product-item {  
   margin-bottom: 33px;
   width: 360px;
 }
 
-.product-item a {
+.product{
+  position: relative;
+}
+
+.product-browser{    
+  width: 100%;
+  height: 40px;
+  background-image: url(../img/browser.png);
+  opacity: 0.12;
+}
+
+.product:hover .product-browser{  
+  opacity: 1;
+}
+
+.product:hover .product-description{
+   display: flex;
+}
+
+.product-description{
+  display: none;
+  position: absolute;
+  bottom: 0;  
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: ;
+  text-align: center;
+  width: 100%;  
+  
+  background-color: #EFEFEF;    
+  padding-bottom: 43px;
+}
+
+.product-description:hover{
+  display: flex;
+}
+
+.product-item a {  
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #000000;
+  color: #000000;  
 }
 
 .product-item a:hover,
@@ -633,7 +676,9 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.product-item p {
+.product-item p { 
+  margin: 0; 
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
