@@ -38,17 +38,22 @@
       <div class=container>
       <div class="catalog-column">
       <section class="filters">
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
-            <p>
-              <label
-                >от<input type="number" name="filter-cost-min" value="0"
-              /></label>
-              <label
-                >до<input type="number" name="filter-cost-max" value="15000"
-              /></label>
-            </p>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="filter-item">
             <legend>Сетка:</legend>
@@ -103,12 +108,12 @@
             <li><a href="">По типу</a></li>
             <li><a href="">По названию</a></li>
             <li>
-              <a href="">
+              <a href="" class="arrow arrow-down">
                 <span class="visually-hidden">Сортировка по убыванию</span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" class="arrow arrow-up">
                 <span class="visually-hidden">Сортировка по возрастанию</span>
               </a>
             </li>
@@ -122,9 +127,9 @@
               <div class="product-description">
                 <h3><a href="">Sedona</a></h3>
                 <p>
-                  Информационный сайт<br> для туристов
+                  Информационный сайт для туристов
                 </p>
-                <button type="button" class="btn btn-red btn-xs">9900 руб.</button>
+                <button type="button" class="btn btn-red btn-xs">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -135,8 +140,8 @@
                 alt="Изображение продуктового лендинга приложений iOS и Android" />
               <div class="product-description">
                 <h3><a href="">Pink App</a></h3>
-                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
-                <button type="button" class="btn btn-red btn-xs">9900 руб.</button>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <button type="button" class="btn btn-red btn-xs">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -148,7 +153,7 @@
               <div class="product-description">
                 <h3><a href="">Barbershop</a></h3>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
-                <button type="button" class="btn btn-red btn-xs">9900 руб.</button>
+                <button type="button" class="btn btn-red btn-xs">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -159,7 +164,7 @@
               <div class="product-description">
                 <h3><a href="">Mishka</a></h3>
                 <p>Интернет-магазин вязаных игрушек</p>
-                <button type="button" class="btn btn-red btn-xs">9900 руб.</button>
+                <button type="button" class="btn btn-red btn-xs">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -173,7 +178,7 @@
                 <p>
                   Лендинг курсов повышения квалификации
                 </p>
-                <button type="button" class="btn btn-red btn-xs">9900 руб.</button>
+                <button type="button" class="btn btn-red btn-xs">9 900 руб.</button>
               </div>
             </div>
           </li>
@@ -185,17 +190,17 @@
               <div class="product-description">
                 <h3><a href="">Кваст</a></h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <button type="button" class="btn btn-red btn-xs">9900 руб.</button>
+                <button type="button" class="btn btn-red btn-xs">9 900 руб.</button>
               </div>
             </div>
           </li>
         </ul>
         <div>
           <ul class="pagination">
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">Следующая</a></li>
+            <li class="pagination-item pagination-item-current"><a href="">1</a></li>
+            <li class="pagination-item"><a href="">2</a></li>
+            <li class="pagination-item"><a href="">3</a></li>
+            <li class="pagination-item"><a href="">Следующая</a></li>
           </ul>
         </div>
       </section>
