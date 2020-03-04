@@ -1,11 +1,15 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /*----- Общие стили -----*/
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -21,6 +25,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -112,8 +118,14 @@ a {
 }
 
 .btn-xs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   max-width: 200px;
@@ -125,8 +137,14 @@ a {
 }
 
 .btn-md {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   max-width: 160px;
@@ -138,8 +156,14 @@ a {
 }
 
 .btn-xl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   max-width: 240px;
@@ -151,8 +175,14 @@ a {
 }
 
 .btn-lg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   max-width: 260px;
@@ -185,7 +215,12 @@ a {
 /*----- Шапка сайта -----*/
 
 .main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 
   padding-top: 29px;
@@ -214,12 +249,23 @@ a {
 /*----- Навигация -----*/
 
 .navigation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
   width: 100%;
@@ -242,9 +288,14 @@ a {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-width: 440px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -336,6 +387,8 @@ a {
 }
 
 .slider-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -374,6 +427,7 @@ a {
   height: 8px;
   background: #fff;
   border: 2px solid #c1c1c1;
+  -webkit-box-shadow: 0 0 0 5px #fff;
   box-shadow: 0 0 0 5px #fff;
 
   margin-bottom: 8px;
@@ -418,8 +472,16 @@ a {
   margin: 0;
   padding-right: 60px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
 
   list-style: none;
@@ -459,6 +521,8 @@ a {
 }
 
 .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 39px;
   margin-bottom: 48px;
@@ -521,9 +585,16 @@ a {
 }
 
 .promo-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   max-width: 360px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -535,6 +606,8 @@ a {
   margin-right: -30px;
 
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -586,9 +659,17 @@ a {
   padding-top: 48px;
   padding-bottom: 34px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   border-top: 2px solid #efefef;
@@ -617,6 +698,8 @@ a {
 /*----- Секция Фильтров -----*/
 
 .catalog-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 34px;
 }
@@ -626,7 +709,12 @@ a {
 }
 
 .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 
   padding-left: 140px;
@@ -661,6 +749,9 @@ a {
   display: block;
 
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -682,7 +773,9 @@ a {
 }
 
 .filter-input-checkbox:checked:hover + label::after,
-.filter-input-checkbox:hover + label::before {
+.filter-input-checkbox:checked:focus + label::after,
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
   opacity: 0.8;
 }
 
@@ -723,7 +816,7 @@ a {
 
 .filter-input:disabled + label {
   color: #4d4d4d;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .filter-input-radio:checked + label::after {
@@ -738,6 +831,16 @@ a {
 
   background-color: #b9b9b9;
   border-radius: 50%;
+}
+
+.filter-input-radio:hover + label::after,
+.filter-input-radio:focus + label::after {
+  background-color: #4d4d4d;
+}
+
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before {
+  border: 4px solid #4d4d4d;
 }
 
 .filter-item legend {
@@ -761,6 +864,7 @@ a {
 }
 
 .range-filter {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 
   width: 260px;
@@ -805,6 +909,7 @@ a {
 
   border: 8px solid #ffffff;
   background-color: #ababab;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
@@ -824,6 +929,9 @@ a {
 
 .price-controls label {
   display: inline-block;
+
+  vertical-align: top;
+
   width: 50%;
 
   font-size: 16px;
@@ -852,7 +960,11 @@ a {
 /*----- Секция Сортировки -----*/
 
 .panel-sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -873,7 +985,11 @@ a {
   padding-top: 3px;
 
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -886,6 +1002,8 @@ a {
 
 .arrow::before {
   display: inline-block;
+
+  vertical-align: top;
 
   opacity: 0.2;
 
@@ -934,8 +1052,13 @@ a {
 /*----- Секция Товаров -----*/
 
 .list-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   padding: 0;
@@ -970,6 +1093,8 @@ a {
 }
 
 .product:hover .product-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -978,7 +1103,15 @@ a {
   position: absolute;
   bottom: 8px;
 
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: normal;
+
+  -ms-flex-direction: column;
+
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   width: 100%;
@@ -993,6 +1126,8 @@ a {
 }
 
 .product-description:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1025,6 +1160,10 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
 
   display: flex;
   margin-bottom: 40px;
@@ -1086,7 +1225,11 @@ a {
 /*----- Секция Footer -----*/
 
 .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   margin-top: 49px;
@@ -1098,7 +1241,11 @@ a {
 }
 
 .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   padding: 0;
@@ -1108,6 +1255,8 @@ a {
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   width: 79px;
@@ -1167,9 +1316,26 @@ a {
   overflow: hidden;
 }
 
+.map-wrapper iframe {
+  position: relative;
+
+  width: 100%;
+
+  border: none;
+}
+
 .map {
   width: 100%;
-  height: auto;
+  height: 416px;
+
+  z-index: 1;
+}
+
+.map-marker {
+  position: absolute;
+
+  top: 12%;
+  left: 50%;
 }
 
 .main-footer b {
@@ -1186,21 +1352,23 @@ a {
   line-height: 22px;
 }
 
-.map-marker {
-  position: absolute;
-
-  top: 21%;
-  left: 56.5%;
-}
-
 .contacts {
   position: absolute;
 
   top: 54px;
   left: 210px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   width: 319px;
@@ -1239,16 +1407,20 @@ a {
 /*----- Модальное окно -----*/
 
 .modal {
-  display: block;
+  display: none;
+
+  z-index: 10;
 
   position: fixed;
   left: 50%;
-  bottom: 180px;
+  bottom: 20%;
 
   margin-left: -480px;
   padding: 69px 99px;
 
   background-color: white;
+
+  -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 
@@ -1256,8 +1428,16 @@ a {
   height: 590px;
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   margin-bottom: 39px;
@@ -1297,7 +1477,11 @@ a {
 }
 
 .modal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 36px;
 }
@@ -1317,6 +1501,7 @@ a {
 .modal input[type="text"],
 .modal input[type="email"],
 .modal textarea {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
   padding: 16px 18px;
@@ -1337,7 +1522,55 @@ a {
   margin-bottom: 47px;
 }
 
+.modal input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
 .modal input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal textarea::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal textarea::-moz-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal textarea:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal textarea::-ms-input-placeholder {
   font-size: 16px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.5);
