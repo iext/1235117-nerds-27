@@ -17,7 +17,7 @@ mapClose.addEventListener("click", function(evt) {
   mapPopup.classList.remove("modal-error");
   mapPopup.classList.remove("modal-show");
   mapPopup.classList.add("modal-hide");
-  setTimeout(() => {
+  setTimeout(function() {
     mapPopup.classList.remove("modal-hide");
   }, 500);
 });

@@ -261,15 +261,12 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.site-navigation {
+  width: 440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  min-width: 440px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -894,6 +891,26 @@ input[type="number"] {
   background: #f1f1f1;
 }
 
+.price-controls input::-webkit-input-placeholder {
+  color: #283136;
+  opacity: 1;
+}
+
+.price-controls input::-moz-placeholder {
+  color: #283136;
+  opacity: 1;
+}
+
+.price-controls input:-ms-input-placeholder {
+  color: #283136;
+  opacity: 1;
+}
+
+.price-controls input::-ms-input-placeholder {
+  color: #283136;
+  opacity: 1;
+}
+
 .price-controls input::placeholder {
   color: #283136;
   opacity: 1;
@@ -1171,22 +1188,22 @@ input[type="number"] {
 }
 
 .footer-social {
-  width: 260px;
+  width: 280px;
 }
 
 .footer-social ul {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .social-button {
+  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1233,7 +1250,7 @@ input[type="number"] {
 }
 
 .footer-text {
-  margin-left: 140px;
+  margin-left: 120px;
 }
 
 .map-wrapper {
@@ -1323,46 +1340,96 @@ input[type="number"] {
 
 /*----- Модальное окно -----*/
 
-@keyframes show-modal {
+@-webkit-keyframes show-modal {
   0% {
+    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
-
   100% {
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes show-modal {
+  0% {
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes close-modal {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    opacity: 0;
   }
 }
 
 @keyframes close-modal {
   0% {
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 1;
   }
-
   100% {
+    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(-51%, -50%);
+    transform: translate(-51%, -50%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-
   10%,
   30%,
   50%,
   70%,
   90% {
+    -webkit-transform: translate(-51%, -50%);
     transform: translate(-51%, -50%);
   }
-
   20%,
   40%,
   60%,
   80% {
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
 }
@@ -1373,6 +1440,7 @@ input[type="number"] {
   position: fixed;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding: 69px 99px;
   background-color: white;
@@ -1384,15 +1452,18 @@ input[type="number"] {
 
 .modal-show {
   display: block;
+  -webkit-animation: show-modal 0.5s;
   animation: show-modal 0.5s;
 }
 
 .modal-hide {
   display: block;
+  -webkit-animation: close-modal 0.5s;
   animation: close-modal 0.5s;
 }
 
 .modal-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
@@ -1504,10 +1575,6 @@ input[type="number"] {
   color: #444444;
 }
 
-.modal input:focus:-moz-placeholder {
-  color: #444444;
-}
-
 .modal input:focus:-ms-input-placeholder {
   color: #444444;
 }
@@ -1517,10 +1584,6 @@ input[type="number"] {
 }
 
 .modal textarea:focus::-moz-placeholder {
-  color: #444444;
-}
-
-.modal textarea:focus:-moz-placeholder {
   color: #444444;
 }
 
@@ -1541,6 +1604,12 @@ input[type="number"] {
 }
 
 .modal input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.5);
