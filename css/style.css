@@ -923,18 +923,18 @@ input[type="number"] {
 .filters button {
   margin-top: 30px;
   background-color: #eeeeee;
-  border: 3px solid #eeeeee;
-  padding: 13px;
+  padding: 16px;
 }
 
 .filters button:hover,
 .filters button:focus {
   background-color: #dfdfdf;
-  border: 3px solid #dfdfdf;
 }
 
 .filters button:active {
-  border-top-color: rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 /*----- Секция Сортировки -----*/
@@ -1544,8 +1544,9 @@ input[type="number"] {
 
 .modal input:focus,
 .modal textarea:focus {
-  border-color: #000000;
-  outline-color: white;
+  border-color: #000000;  
+  outline-color: #ffffff;
+  outline: 0;
 }
 
 .modal textarea {
@@ -1557,8 +1558,9 @@ input[type="number"] {
 
 .modal input:invalid {
   color: #e74246;
-  border-color: #e74246;
-  outline-color: white;
+  border-color: #e74246;  
+  outline-color:  #ffffff;
+  outline: 0;
 }
 
 .modal input::-webkit-input-placeholder {
